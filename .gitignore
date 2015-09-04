@@ -1,5 +1,6 @@
 .DS_Store
 build
+_Build
 *.xcodeproj/*.pbxuser
 *.xcodeproj/*.perspectivev3
 *.xcodeproj/xcuserdata
