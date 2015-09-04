@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F74632B91B9924920018528D /* iOS-Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F74632BA1B9924920018528D /* Build configuration list for PBXAggregateTarget "iOS-Framework" */;
+			buildPhases = (
+				F74632BD1B99249F0018528D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "iOS-Framework";
+			productName = "iOS-Framework";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		3354379C19E71096005661F3 /* FMResultSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3354379B19E71096005661F3 /* FMResultSetTests.m */; };
 		621721B21892BFE30006691F /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
@@ -53,6 +67,16 @@
 		EE42910912B42FD00088BD94 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBF0A13E34D00A6D3E3 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE42910A12B42FD20088BD94 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; };
 		EE42910D12B42FFA0088BD94 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE42910C12B42FFA0088BD94 /* libsqlite3.dylib */; };
+		F74632AF1B991F700018528D /* FMDB.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 8314AF3218CD73D600EC0E25 /* FMDB.h */; };
+		F74632B01B991F700018528D /* FMDatabase.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBA0A13E34D00A6D3E3 /* FMDatabase.h */; };
+		F74632B11B991F700018528D /* FMResultSet.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBF0A13E34D00A6D3E3 /* FMResultSet.h */; };
+		F74632B21B991F700018528D /* FMDatabaseQueue.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CC47A00D148581E9002CCDAB /* FMDatabaseQueue.h */; };
+		F74632B31B991F700018528D /* FMDatabaseAdditions.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CC50F2CC0DF9183600E4AAAE /* FMDatabaseAdditions.h */; };
+		F74632B41B991F700018528D /* FMDatabasePool.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CC9E4EB713B31188005F9210 /* FMDatabasePool.h */; };
+		F74632B51B991F700018528D /* FMDatabase+InMemoryOnDiskIO.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CC7CE42618F5C04600938264 /* FMDatabase+InMemoryOnDiskIO.h */; };
+		F74632B61B991F700018528D /* FMDatabase+FTS3.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CCA66A2819C0CB1900EFDAC1 /* FMDatabase+FTS3.h */; };
+		F74632B71B991F700018528D /* FMTokenizers.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CCA66A2A19C0CB1900EFDAC1 /* FMTokenizers.h */; };
+		F74632B81B991F700018528D /* fts3_tokenizer.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = CCA66A2C19C0CB1900EFDAC1 /* fts3_tokenizer.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +108,26 @@
 				8DD76F9F0486AA7600D96B5E /* fmdb.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F74632AE1B991F230018528D /* Copy Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Headers;
+			dstSubfolderSpec = 16;
+			files = (
+				F74632AF1B991F700018528D /* FMDB.h in Copy Headers */,
+				F74632B01B991F700018528D /* FMDatabase.h in Copy Headers */,
+				F74632B11B991F700018528D /* FMResultSet.h in Copy Headers */,
+				F74632B21B991F700018528D /* FMDatabaseQueue.h in Copy Headers */,
+				F74632B31B991F700018528D /* FMDatabaseAdditions.h in Copy Headers */,
+				F74632B41B991F700018528D /* FMDatabasePool.h in Copy Headers */,
+				F74632B51B991F700018528D /* FMDatabase+InMemoryOnDiskIO.h in Copy Headers */,
+				F74632B61B991F700018528D /* FMDatabase+FTS3.h in Copy Headers */,
+				F74632B71B991F700018528D /* FMTokenizers.h in Copy Headers */,
+				F74632B81B991F700018528D /* fts3_tokenizer.h in Copy Headers */,
+			);
+			name = "Copy Headers";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -367,6 +411,7 @@
 				6290CBB1188FE836009790F8 /* Sources */,
 				6290CBB2188FE836009790F8 /* Frameworks */,
 				6290CBB3188FE836009790F8 /* CopyFiles */,
+				F74632AE1B991F230018528D /* Copy Headers */,
 			);
 			buildRules = (
 			);
@@ -441,6 +486,9 @@
 					BF5D041518416BB2008C5AA9 = {
 						TestTargetID = EE4290EE12B42F870088BD94;
 					};
+					F74632B91B9924920018528D = {
+						CreatedOnToolsVersion = 6.4;
+					};
 				};
 			};
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "fmdb" */;
@@ -462,6 +510,7 @@
 				EE4290EE12B42F870088BD94 /* FMDB */,
 				BF5D041518416BB2008C5AA9 /* Tests */,
 				6290CBB4188FE836009790F8 /* FMDB-IOS */,
+				F74632B91B9924920018528D /* iOS-Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -476,6 +525,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F74632BD1B99249F0018528D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/build-ios.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6290CBB1188FE836009790F8 /* Sources */ = {
@@ -802,6 +867,22 @@
 			};
 			name = Release;
 		};
+		F74632BB1B9924920018528D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "${PROJECT_NAME}";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F74632BC1B9924920018528D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "${PROJECT_NAME}";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -849,6 +930,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F74632BA1B9924920018528D /* Build configuration list for PBXAggregateTarget "iOS-Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74632BB1B9924920018528D /* Debug */,
+				F74632BC1B9924920018528D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
